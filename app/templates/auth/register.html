@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+
+{% block content %}
+
+<div class="about-top">
+    <strong>Create</strong> an account to save your progress and add new words to the game!
+</div>
+
+<div class="form-container">
+    <div class="form-title">
+        <strong>
+            Register
+        </strong>
+    </div>
+    <form method="post">
+        <div class="f-pos">
+        <div id="f-left">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="username" required>
+        </div>
+        <div id="f-middle">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="email" required>
+        </div>
+        <div id="f-right">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </div>
+        <div id="f-down">
+            <input type="submit" value="Register">
+        </div>
+    </div>
+    </form>
+</div>
+<div class="about-bottom">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae omnis unde dignissimos temporibus quidem, rerum assumenda dolorum cum ad?</p>
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %} - Spell-it</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="page-container">
+            <nav>
+                <a href="{{ url_for('main.index') }}"><strong>Spell-it</strong></a>
+                <div class="nav-right">
+                    {% if g.user %}
+                        <a href="#">{{ g.user['username'] }}</a>
+                        <a href="{{ url_for('auth.logout') }}">Log Out</a>
+                    {% else %}
+                        <a href="{{ url_for('auth.register') }}">Register</a>
+                        <a href="{{ url_for('auth.login') }}">Log In</a>
+                    {% endif %}
+                </div>
+            </nav>
+
+            <section class="content">
+                <div class="bg-hero">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            <div class="flash-wrapper">
+                                {% for category, message in messages %}
+                                    <div class="flash" id="{{ category }}">{{ message }}</div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% endwith %}
+
+                    {% block content %}{% endblock %}
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div>
+                    <strong>Spell-it 2021</strong>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        
+    </script>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    /* background-color: rgba(230, 235, 240, 0.5); */
+    background-image: url("images/bg-hero.jpg");
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg-hero {
+    /* brackgound-image: url("images/bg-hero.jpg"); */
+    /* background-position: 70 65; */
+    /* background-color: rgba(230, 235, 240, 0.5); */
+    width: 100%;
+    top: 0;
+}
+
+.content {
+    padding-bottom: 2.5rem;
+}
+
+nav {
+    background-color: rgb(32, 34, 37);
+    top: 0;
+    overflow: hidden;
+}
+
+nav a {
+    background-color: rgba(70, 72, 73, 0.6);
+    text-decoration: none;
+    border: none;
+    border-radius: 2em;
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 0.4em 0.8em;
+    margin: 0.5em;
+}
+
+nav a:hover {
+    background-color: rgba(18, 19, 20, 0.7);
+}
+
+nav a:active {
+    background-color: rgba(150, 144, 144, 0.98);
+}
+
+
+.nav-right {
+    float: right;
+}
+
+.about-top {
+    background-color: rgba(122, 122, 122, 0.98);
+    color: white;
+    margin: 1.5em 0 1em 0;
+    padding: .7em;
+    font-size: 1.2rem;
+}
+
+.form-container {
+    background-color: rgba(160, 160, 160, 0.98);
+    border: 2px solid gray;
+    border-radius: 1em;
+    margin: 2.7em 2em;
+    padding: 2em;
+    font-weight: bold;
+}
+
+.form-title {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: rgba(55, 55, 119, 0.9);
+    font-size: 30px;
+    text-size-adjust: auto;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: rgba(48, 119, 48, 0.8);
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 5px;
+    margin: 8px 0;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+#remember {
+    position: relative;
+    top: 2px;
+}
+
+.about-bottom {
+    background-color: rgba(122, 122, 122, 0.98);
+    color: white;
+    margin: 1.5em 0 1em 0;
+    padding: .6em;
+    font-size: 1.2rem;
+}
+footer {
+    background-color: rgb(45, 47, 49);
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    padding: .5em 0;
+}

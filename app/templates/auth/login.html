@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+
+{% block content %}
+
+<div class="about-top">
+    <strong>Log In</strong> to save your progress and add new words to the game!
+</div>
+
+<div class="form-container">
+    <div class="form-title">
+        <strong>
+            Log In
+        </strong>
+    </div>
+    <form method="post">
+        <div class="f-pos">
+        <div id="f-left">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="username" required>
+        </div>
+        <div id="f-right">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </div>
+        <div id="f-down">
+            <input type="checkbox" name="remember" id="remember" value="true">
+            <label for="remember" id="remember">Remember Me</label>
+            <input type="submit" value="Log In">
+        </div>
+    </div>
+    </form>
+</div>
+
+<div class="about-bottom">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae omnis unde dignissimos temporibus quidem, rerum assumenda dolorum cum ad?</p>
+</div>
+{% endblock %}
